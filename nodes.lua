@@ -132,3 +132,10 @@ minetest.register_node("startest:cracked_stone", {
     groups = {cracky=1, stone=1},
     drop = "default:cobble"
 })
+
+minetest.register_node("startest:monster_block", {
+    description = "Monster Block",
+    tiles = {"monster_block.png"},
+    groups = {crumbly=1, stone=1},
+    drop = "startest:monster_block"
+})
