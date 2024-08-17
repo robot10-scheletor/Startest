@@ -7,3 +7,5 @@ dofile(MP.."/craftitems.lua")
 dofile(MP.."/nodes.lua")
 
 dofile(MP.."/decorations.lua")
+
+dofile(MP.."/weapons.lua")
