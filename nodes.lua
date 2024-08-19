@@ -22,7 +22,7 @@ minetest.register_node("startest:space_crystal_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -41,7 +41,7 @@ minetest.register_node("startest:space_crystal_single_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -60,7 +60,7 @@ minetest.register_node("startest:space_crystal_pointed_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -79,7 +79,7 @@ minetest.register_node("startest:dense_space_crystal_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -98,7 +98,7 @@ minetest.register_node("startest:dense_space_crystal_single_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -117,7 +117,7 @@ minetest.register_node("startest:dense_space_crystal_pointed_spike", {
 	sunlight_propagates = true,
 	walkable = false,
 	buildable_to = true,
-	groups = {cracky = 3, attached_node = 1},
+	groups = {cracky = 1, attached_node = 1},
 	sounds = default.node_sound_leaves_defaults(),
 	selection_box = {
 		type = "fixed",
@@ -138,4 +138,11 @@ minetest.register_node("startest:monster_block", {
     tiles = {"monster_block.png"},
     groups = {crumbly=1, stone=1},
     drop = "startest:monster_block"
+})
+
+minetest.register_node("startest:reinforced_steel", {
+    description = "Reinforced Steel",
+    tiles = {"reinforced_steel.png"},
+    groups = {cracky=1, stone=1},
+    drop = "startest:reinforced_steel"
 })

@@ -61,3 +61,17 @@ shooter.register_weapon("startest:space_troop_sniper", {
 	},
 })
 
+minetest.register_tool("startest:acid_sword", {
+    description = "Acid Sword",
+    inventory_image = "acid_sword.png",
+	tool_capabilities = {
+		full_punch_interval = 0.7,
+		max_drop_level=1,
+		groupcaps={
+					snappy={times={[1]=3, [2]=2, [3]=1}, uses=10, maxlevel=3},
+		},
+		damage_groups = {fleshy=9},
+	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {sword = 1}
+})
