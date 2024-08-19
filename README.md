@@ -2,7 +2,10 @@
 This is a mod for minetest inspired by Star Craft game series.
 
 # Actual features
-(nothing)
+- new nodes
+- new craftitems
+- new weapons
+- new structures
 
 # Future features
 - new nodes
