@@ -1,5 +1,5 @@
 # Startest
-This is a mod for minetest inspired by Star Craft game series.
+This mod adds several space stuff to the game.
 
 # Actual features
 - new nodes
