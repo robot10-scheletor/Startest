@@ -146,3 +146,13 @@ minetest.register_node("startest:reinforced_steel", {
     groups = {cracky=1, stone=1},
     drop = "startest:reinforced_steel"
 })
+
+minetest.register_node("startest:reinforced_glass", {
+    drawtype = "glasslike_framed_optional",
+    description = "Reinforced Glass",
+    tiles = {"reinforced_glass.png"},
+    groups = {cracky=1, stone=1},
+    drop = "startest:reinforced_glass",
+    sunlight_propagates = true,
+    sounds = default.node_sound_glass_defaults(),
+})

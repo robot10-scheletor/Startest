@@ -22,3 +22,8 @@ minetest.register_craftitem("startest:oil_canister", {
 	description = "Oil Canister",
 	inventory_image = "oil_canister.png",
 })
+
+minetest.register_craftitem("startest:acid_bottle", {
+	description = "Acid Bottle",
+	inventory_image = "acid_bottle.png",
+})

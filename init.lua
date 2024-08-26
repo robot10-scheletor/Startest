@@ -9,3 +9,7 @@ dofile(MP.."/nodes.lua")
 dofile(MP.."/decorations.lua")
 
 dofile(MP.."/weapons.lua")
+
+if minetest.get_modpath("3d_armor") then
+	dofile(MP.."/armor.lua")
+end
