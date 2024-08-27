@@ -47,3 +47,13 @@ minetest.register_craftitem("startest:light_collector_full", {
 	description = "Light Collector Full",
 	inventory_image = "light_collector_full.png",
 })
+
+minetest.register_craftitem("startest:reinforced_steel_ingot", {
+	description = "Reinforced Steel Ingot",
+	inventory_image = "reinforced_iron_ingot.png",
+})
+
+minetest.register_craftitem("startest:atomic_reinforcer", {
+	description = "Atomic Reinforcer",
+	inventory_image = "atomic_reinforcer.png",
+})

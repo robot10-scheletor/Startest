@@ -62,10 +62,46 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-    output = "startest:space_troop_sniper 3",
+    output = "startest:space_troop_sniper 1",
     recipe = {
         {"", "", "default:steel_ingot"},
         {"default:steel_ingot", "startest:gun_core", ""},
         {"default:stick", "", ""}
+    }
+})
+
+minetest.register_craft({
+    output = "startest:reinforced_steel_ingot 4",
+    recipe = {
+        {"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"},
+        {"default:steel_ingot", "startest:atomic_reinforcer", "default:steel_ingot"},
+        {"default:steel_ingot", "default:steel_ingot", "default:steel_ingot"}
+    }
+})
+
+minetest.register_craft({
+    output = "startest:reinforced_steel_ingot 9",
+    recipe = {
+        {"", "", ""},
+        {"", "startest:reinforced_steel", ""},
+        {"", "", ""}
+    }
+})
+
+minetest.register_craft({
+    output = "startest:reinforced_steel",
+    recipe = {
+        {"startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot"},
+        {"startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot"},
+        {"startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot", "startest:reinforced_steel_ingot"}
+    }
+})
+
+minetest.register_craft({
+    output = "startest:atomic_reinforcer",
+    recipe = {
+        {"startest:space_crystal", "default:mese_crystal", "startest:space_crystal"},
+        {"default:mese_crystal", "default:diamond", "default:mese_crystal"},
+        {"startest:space_crystal", "default:mese_crystal", "startest:space_crystal"}
     }
 })
