@@ -144,6 +144,42 @@ if minetest.get_modpath("3d_armor") then
         }
     })
     
+    minetest.register_craft({
+        output = "startest:dense_space_crystal_helmet",
+        recipe = {
+            {"startest:dense_space_crystal", "startest:dense_space_crystal", "startest:dense_space_crystal"},
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"},
+            {"", "", ""}
+        }
+    })
+    
+   minetest.register_craft({
+        output = "startest:dense_space_crystal_chestplate",
+        recipe = {
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"},
+            {"startest:dense_space_crystal", "startest:dense_space_crystal", "startest:dense_space_crystal"},
+            {"startest:dense_space_crystal", "startest:dense_space_crystal", "startest:dense_space_crystal"}
+        }
+    })
+    
+    minetest.register_craft({
+        output = "startest:dense_space_crystal_leggins",
+        recipe = {
+            {"startest:dense_space_crystal", "startest:dense_space_crystal", "dense_startest:space_crystal"},
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"},
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"}
+        }
+    })
+    
+    minetest.register_craft({
+        output = "startest:dense_space_crystal_boots",
+        recipe = {
+            {"", "", ""},
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"},
+            {"startest:dense_space_crystal", "", "startest:dense_space_crystal"}
+        }
+    })
+    
     if minetest.get_modpath("shields") then
         
         minetest.register_craft({
@@ -152,6 +188,15 @@ if minetest.get_modpath("3d_armor") then
                 {"", "startest:space_crystal", ""},
                 {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"},
                 {"", "startest:space_crystal", ""}
+            }
+        })
+        
+        minetest.register_craft({
+            output = "startest:dense_space_crystal_shield",
+            recipe = {
+                {"", "startest:dense_space_crystal", ""},
+                {"startest:dense_space_crystal", "startest:dense_space_crystal", "startest:dense_space_crystal"},
+                {"", "startest:dense_space_crystal", ""}
             }
         })
     end
