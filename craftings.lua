@@ -105,3 +105,54 @@ minetest.register_craft({
         {"startest:space_crystal", "default:mese_crystal", "startest:space_crystal"}
     }
 })
+
+if minetest.get_modpath("3d_armor") then
+
+    minetest.register_craft({
+        output = "startest:space_crystal_helmet",
+        recipe = {
+            {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"},
+            {"startest:space_crystal", "", "startest:space_crystal"},
+            {"", "", ""}
+        }
+    })
+    
+   minetest.register_craft({
+        output = "startest:space_crystal_chestplate",
+        recipe = {
+            {"startest:space_crystal", "", "startest:space_crystal"},
+            {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"},
+            {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"}
+        }
+    })
+    
+    minetest.register_craft({
+        output = "startest:space_crystal_leggins",
+        recipe = {
+            {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"},
+            {"startest:space_crystal", "", "startest:space_crystal"},
+            {"startest:space_crystal", "", "startest:space_crystal"}
+        }
+    })
+    
+    minetest.register_craft({
+        output = "startest:space_crystal_boots",
+        recipe = {
+            {"", "", ""},
+            {"startest:space_crystal", "", "startest:space_crystal"},
+            {"startest:space_crystal", "", "startest:space_crystal"}
+        }
+    })
+    
+    if minetest.get_modpath("shields") then
+        
+        minetest.register_craft({
+            output = "startest:space_crystal_shield",
+            recipe = {
+                {"", "startest:space_crystal", ""},
+                {"startest:space_crystal", "startest:space_crystal", "startest:space_crystal"},
+                {"", "startest:space_crystal", ""}
+            }
+        })
+    end
+end
