@@ -57,3 +57,8 @@ minetest.register_craftitem("startest:atomic_reinforcer", {
 	description = "Atomic Reinforcer",
 	inventory_image = "atomic_reinforcer.png",
 })
+
+minetest.register_craftitem("startest:aiurite_fragment", {
+	description = "Aiurite Fragment",
+	inventory_image = "aiurite_fragment.png",
+})

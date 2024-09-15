@@ -156,3 +156,17 @@ minetest.register_node("startest:reinforced_glass", {
     sunlight_propagates = true,
     sounds = default.node_sound_glass_defaults(),
 })
+
+minetest.register_node("startest:deep_space_stone", {
+    description = "Deep Space Stone",
+    tiles = {"deep_space_stone.png"},
+    groups = {cracky=1, stone=1},
+    drop = "startest:deep_space_stone"
+})
+
+minetest.register_node("startest:aiurite_ore", {
+    description = "Aiurite Ore",
+    tiles = {"aiurite_ore.png"},
+    groups = {cracky=1, stone=1},
+    drop = "startest:aiurite_fragment"
+})
