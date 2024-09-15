@@ -6,6 +6,7 @@ This mod adds several space stuff to the game.
 - new craftitems
 - new weapons
 - new structures
+- new armor
 
 # Future features
 - new nodes
